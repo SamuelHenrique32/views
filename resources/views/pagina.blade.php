@@ -6,7 +6,11 @@
 
     <body>
 
-        @component('components.meucomponente')
+        @component('components.meucomponente', ['tipo'=>'danger', 'titulo'=>'Erro fatal'])
+            <strong>Erro: </strong> Sua mensagem de erro.
+        @endcomponent
+
+        @component('components.meucomponente', ['tipo'=>'danger', 'titulo'=>'Erro fatal'])
             <strong>Erro: </strong> Sua mensagem de erro.
         @endcomponent
 
