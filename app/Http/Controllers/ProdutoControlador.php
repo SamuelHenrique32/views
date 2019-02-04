@@ -18,4 +18,9 @@ class ProdutoControlador extends Controller
         //retorna array associativo
         return view ('produtos', compact('produtos'));
     }
+
+    public function secaoprodutos($palavra){
+
+        return view('secao_produtos', compact('palavra'));
+    }
 }
