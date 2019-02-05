@@ -50,3 +50,7 @@ Route::get('/mostraropcoes', 'ProdutoControlador@mostrar_opcoes');
 
 Route::get('/opcoes/{opcao}', 'ProdutoControlador@opcoes');
 
+Route::get('/loop/for/{n}', 'ProdutoControlador@loopFor');
+
+Route::get('/loop/foreach', 'ProdutoControlador@loopForeach');
+
